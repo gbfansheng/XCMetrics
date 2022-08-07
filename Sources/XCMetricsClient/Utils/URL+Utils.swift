@@ -34,8 +34,6 @@ extension URL {
         // This: /Users/username/Library/Developer/Xcode/DerivedData/Spotify-dndppkxfrrjwnwheckoansdgklfh/Build/Products
         // Becomes: /Users/username/Library/Developer/Xcode/DerivedData/Spotify-dndppkxfrrjwnwheckoansdgklfh/Logs/Build
         return URL(fileURLWithPath: buildDirectory)
-            .deletingLastPathComponent()
-            .deletingLastPathComponent()
             .appendingPathComponent("Logs")
             .appendingPathComponent("Build")
     }
